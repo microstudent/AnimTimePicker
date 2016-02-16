@@ -9,8 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.microstudent.app.animtimepicker.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/linearLayout">
+        <Button
+            android:text="time picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openTimePicker"/>
+        <Button
+            android:text="exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="close"/>
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
 </RelativeLayout>
